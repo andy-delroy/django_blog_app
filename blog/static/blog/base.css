@@ -1,0 +1,125 @@
+/* omnipresent styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Righteous&family=Ubuntu+Mono&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
+
+html {
+    font-size: 62.5%; /*10px*/
+    scroll-behavior: smooth;
+}
+
+/* 1200px */
+@media (max-width: 75em) {
+    html {
+        font-size: 60%;
+    }
+}
+
+/* 980px */
+@media (max-width: 61.25em) {
+    html {
+        font-size: 58%;
+    }
+}
+
+/* 460px */
+@media (max-width: 28.75em) {
+    html {
+        font-size: 55%;
+    }
+}
+
+body {
+    position: relative;
+    /* background-color: darkcyan; */
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Righteous', cursive; */
+    color: whitesmoke;
+    width: 100%;
+    min-width: 320px;
+    max-width: 1200px;
+    margin: auto;
+    font-size: 1.8rem; /* 18px */
+    line-height: 1.4;
+}
+
+* a {
+    text-decoration: none;
+    color: white;
+}
+nav {
+    position: absolute;
+    color: white;
+    z-index: 1;
+    /* background-color: aqua; */
+    width: 100%;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+nav> ul > li {
+    margin-right: 10px;
+}
+
+/* title box */
+.title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+.title .title-text{
+    position: absolute;
+    z-index: 2;
+    font-family: 'Righteous', cursive;
+    /* background-color: darkblue; */
+}
+
+.title-text h1 {
+    font-size: 3.2rem;
+    text-align:center;
+}
+
+.title-text p {
+    font-size: 1.4rem;
+}   
+
+.title img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 80%;
+}
+
+/* overlay */
+.title::after {
+    content: "";
+    /* background-color: rebeccapurple; */
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.wrapper {
+    width: 66.7%;
+    max-width: 80rem;
+    min-width: 32rem;
+    margin: auto;
+    /* background-color: darkorange; */
+    padding: 20px 0px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}

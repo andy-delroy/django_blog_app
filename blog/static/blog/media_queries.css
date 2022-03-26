@@ -1,0 +1,24 @@
+/* 480px */
+@media (min-width: 30em) {
+    .title {
+        height: 32vh;
+    }
+}
+
+@media (min-width: 48em) {
+    .title {
+        height: 40vh;
+    }
+}
+
+@media (min-width: 64em) {
+    .title {
+        height: 42vh;
+    }
+}
+
+@media (min-width: 75em) {
+    .title {
+        height: 44vh;
+    }
+}
